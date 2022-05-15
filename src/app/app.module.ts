@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { StarComponent } from './star/star.component';
 import { MovieTitleComponent } from './movie-title/movie-title.component';
 import { MovieTitlePipe } from './movie-title.pipe';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MovieTitlePipe } from './movie-title.pipe';
     AuthorsComponent,
     StarComponent,
     MovieTitleComponent,
-    MovieTitlePipe
+    MovieTitlePipe,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  post = {
+    isLike: false,
+    numLikes: 10
+  }
+
   title = 'Angular app';
 }
