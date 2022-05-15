@@ -1,0 +1,15 @@
+<div class = "box" [class.selectedBox] = "isSelected">
+    <h2 class = "titleText">
+        {{ title }}
+    </h2>
+    <span 
+    class="bi"
+    [class.bi-chevron-compact-down] = "isSelected"
+    [class.bi-chevron-compact-up] = "!isSelected"
+    (click) = "onClick()"
+    >
+    </span>
+</div>
+<div class = "dropDownBox" *ngIf="isSelected">
+    <ng-content></ng-content>>
+</div>

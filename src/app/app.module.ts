@@ -13,6 +13,7 @@ import { StarComponent } from './star/star.component';
 import { MovieTitleComponent } from './movie-title/movie-title.component';
 import { MovieTitlePipe } from './movie-title.pipe';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LikeComponent } from './like/like.component';
     StarComponent,
     MovieTitleComponent,
     MovieTitlePipe,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
