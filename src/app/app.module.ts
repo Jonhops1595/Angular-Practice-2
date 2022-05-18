@@ -14,6 +14,7 @@ import { MovieTitleComponent } from './movie-title/movie-title.component';
 import { MovieTitlePipe } from './movie-title.pipe';
 import { LikeComponent } from './like/like.component';
 import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ZippyComponent } from './zippy/zippy.component';
     MovieTitleComponent,
     MovieTitlePipe,
     LikeComponent,
-    ZippyComponent
+    ZippyComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
