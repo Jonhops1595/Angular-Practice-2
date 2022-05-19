@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +8,7 @@ import { CoursesComponent } from './course/courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './course/courses.service';
 import { AuthorsComponent } from './authors/authors.component';
-import { AuthorsService } from './authors.service';
+import { AuthorsService } from './services/authors.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StarComponent } from './star/star.component';
 import { MovieTitleComponent } from './movie-title/movie-title.component';
@@ -18,6 +19,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { PasswordFormComponent } from './password-form/password-form.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -33,17 +36,21 @@ import { PasswordFormComponent } from './password-form/password-form.component';
     ZippyComponent,
     ContactFormComponent,
     CourseFormComponent,
-    PasswordFormComponent
+    PasswordFormComponent,
+    PostsComponent
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [
     CoursesService,
-    AuthorsService
+    AuthorsService,
+    PostService
   ],
   bootstrap: [AppComponent]
 })
