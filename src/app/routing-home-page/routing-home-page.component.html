@@ -1,0 +1,9 @@
+<h1>Routing App</h1>
+
+<nav>
+    <ul>
+        <li *ngFor="let post of posts"><a [routerLink]="['/day-page',post.year,post.month]"
+            routerLinkActive="active">{{post.year + '/' + post.month}}</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>

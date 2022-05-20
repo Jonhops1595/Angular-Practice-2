@@ -21,6 +21,12 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { PasswordFormComponent } from './password-form/password-form.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostService } from './services/post.service';
+import { RoutingHomePageComponent } from './routing-home-page/routing-home-page.component';
+import { RoutingDayPageComponent } from './routing-day-page/routing-day-page.component';
+import { Routes, RouterModule } from '@angular/router';
+
+
+
 
 @NgModule({
   declarations: [
@@ -37,7 +43,9 @@ import { PostService } from './services/post.service';
     ContactFormComponent,
     CourseFormComponent,
     PasswordFormComponent,
-    PostsComponent
+    PostsComponent,
+    RoutingHomePageComponent,
+    RoutingDayPageComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -45,7 +53,10 @@ import { PostService } from './services/post.service';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [
     CoursesService,
